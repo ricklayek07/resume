@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+	<title>Signup Page</title>
+</head>
+<body>
+	<center>
+    	<form action="" method="post">
+        	{% csrf_token %} 
+	<h3>Signup Here</h3>
+        	<label for="username">Username</label>
+        	<input type="text" placeholder="Username" name="username"> <br /><br/>
+        	<label for="email">Email</label>
+        	<input type="email" placeholder="Email or Phone" name="email"> <br /><br/>
+        	<label for="password1">Password</label>
+        	<input type="password" placeholder="Password" name="password1"> <br /><br/>
+                <label for="password2">Confrom Password</label>
+        	<input type="password" placeholder="Confrom Password" name="password2"> <br /><br/>
+        	<button type="submit">Signup</button><br/><br/>
+                <a href="{% url 'login' %}">Already Registered Candidates Login Here.</a><br/>
+   	</form>
+	</center>
+</body>
